@@ -1,0 +1,54 @@
+ <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear">
+
+      <SearchView
+          android:id="@+id/search"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          android:iconifiedByDefault="false">
+
+      </SearchView>
+
+     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/listView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_below="@+id/search"
+         android:layout_marginTop="17dp" />
+
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab"
+         android:layout_width="70dp"
+         android:layout_height="70dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="30dp"
+         android:layout_marginRight="50dp"
+         android:src="@drawable/if_plus_1646001"
+         app:backgroundTint="#87BF67"
+         app:elevation="0dp"
+         app:layout_anchor="@+id/listView"
+         app:layout_anchorGravity="right|bottom"
+         app:pressedTranslationZ="0dp" />
+
+     <Button
+         android:id="@+id/sort"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_above="@+id/listView"
+         android:layout_toEndOf="@+id/search"
+         android:layout_toRightOf="@+id/search"
+         android:background="@drawable/sort"
+         android:contextClickable="false" />
+
+
+ </RelativeLayout>

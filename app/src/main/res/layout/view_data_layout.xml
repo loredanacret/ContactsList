@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="92dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/viewName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/phoneImageButton"
+            android:layout_alignStart="@+id/phoneImageButton"
+            android:layout_below="@+id/textInputLayout"
+            android:text="TextView"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/phoneImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/viewName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="phoneButton"
+            app:srcCompat="@android:drawable/stat_sys_phone_call_forward" />
+
+        <TextView
+            android:id="@+id/viewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/viewName"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/phoneImageButton"
+            android:layout_toRightOf="@+id/phoneImageButton"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/viewPhone"
+            android:layout_alignStart="@+id/viewPhone"
+            android:layout_alignTop="@+id/emailImageButton"
+            android:layout_marginTop="17dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/viewEmail"
+            android:layout_alignStart="@+id/viewEmail"
+            android:layout_below="@+id/viewEmail"
+            android:layout_marginTop="31dp"
+            android:elegantTextHeight="false"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/viewWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/viewAddress"
+            android:layout_alignStart="@+id/viewAddress"
+            android:layout_alignTop="@+id/webImageButton"
+            android:layout_marginTop="18dp"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/emailImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/phoneImageButton"
+            android:layout_alignStart="@+id/phoneImageButton"
+            android:layout_below="@+id/viewPhone"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
+            android:onClick="emailButton"
+            app:srcCompat="@android:drawable/sym_action_email" />
+
+        <ImageButton
+            android:id="@+id/addressImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/viewAddress"
+            android:layout_alignLeft="@+id/emailImageButton"
+            android:layout_alignStart="@+id/emailImageButton"
+            android:layout_marginBottom="12dp"
+            android:background="@android:color/transparent"
+            android:onClick="addressButton"
+            app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+        <ImageButton
+            android:id="@+id/webImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/addressImageButton"
+            android:layout_alignStart="@+id/addressImageButton"
+            android:layout_below="@+id/viewAddress"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:onClick="webButton"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="381dp">
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/edit_icon"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/btnListView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/listview" />
+
+    </RelativeLayout>
+</RelativeLayout>
